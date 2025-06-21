@@ -4,18 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tra cứu lương nhân sự</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    #result {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Tra cứu lương nhân sự</h2>
-    <form id="salaryForm">
-      <input type="text" id="msnv" placeholder="Nhập MSNV" required />
-      <input type="password" id="matkhau" placeholder="Nhập Mật khẩu" required />
-      <button type="submit">Tra cứu</button>
-    </form>
-    <div id="result"></div>
-  </div>
+  <h2>Tra cứu lương nhân sự</h2>
+  <form id="salaryForm">
+    <input type="text" id="msnv" placeholder="Mã số nhân viên (MSNV)" required />
+    <input type="password" id="matkhau" placeholder="Mật khẩu" required />
+    <button type="submit">Tra cứu</button>
+  </form>
+  <div id="result"></div>
 
   <script src="script.js"></script>
 </body>
